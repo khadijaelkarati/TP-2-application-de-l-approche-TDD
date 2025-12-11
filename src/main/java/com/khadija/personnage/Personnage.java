@@ -13,8 +13,11 @@ public class Personnage {
         if(fois == 1){
             orientation = Orientation.EST;
         }
-        if(fois == 2){ // Ajouter la condition concernant deux rotation
+        if(fois == 2){
             orientation = Orientation.SUD;
+        }
+        if(fois == 3){ // Ajouter la condition concernant trois rotation
+            orientation = Orientation.OUEST;
         }
         return orientation;
     }
