@@ -40,4 +40,9 @@ class PersonnageTest {
         Personnage.Orientation result = personnage.tourner(3);
         assertThat(result).isEqualTo(Personnage.Orientation.OUEST);
     }
+    @Test
+    void tourner_quatre_fois(){
+        Personnage.Orientation result = personnage.tourner(4);
+        assertThat(result).isEqualTo(Personnage.Orientation.NORD);
+    }
 }
