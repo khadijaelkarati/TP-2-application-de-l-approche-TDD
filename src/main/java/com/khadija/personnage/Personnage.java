@@ -10,8 +10,11 @@ public class Personnage {
 
     // Méthode qui fait tourner le personnage un nombre de fois donné
     public Orientation tourner(int fois){
-        if(fois == 1){ // Ajouter la condition concernant une seule rotation
+        if(fois == 1){
             orientation = Orientation.EST;
+        }
+        if(fois == 2){ // Ajouter la condition concernant deux rotation
+            orientation = Orientation.SUD;
         }
         return orientation;
     }
