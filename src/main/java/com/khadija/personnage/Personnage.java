@@ -10,13 +10,13 @@ public class Personnage {
 
     // Méthode qui fait tourner le personnage un nombre de fois donné
     public Orientation tourner(int fois){
-        if(fois == 1){
+        if(fois % 4 == 1){
             orientation = Orientation.EST;
         }
-        if(fois == 2){
+        if(fois % 4 == 2){
             orientation = Orientation.SUD;
         }
-        if(fois == 3){ // Ajouter la condition concernant trois rotation
+        if(fois % 4 == 3){
             orientation = Orientation.OUEST;
         }
         return orientation;
