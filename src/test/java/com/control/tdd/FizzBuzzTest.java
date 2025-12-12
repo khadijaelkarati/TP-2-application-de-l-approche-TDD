@@ -11,4 +11,9 @@ class FizzBuzzTest {
         String result = FizzBuzz.FizzBuzz_de(1);
         assertThat(result).isEqualTo("1");
     }
+    @Test
+    void FizzBuzz_de_3(){
+        String result = FizzBuzz.FizzBuzz_de(3);
+        assertThat(result).isEqualTo("Fizz");
+    }
 }
