@@ -5,7 +5,7 @@ public class FizzBuzz {
         if(nbr % 3 == 0){
             return "Fizz";
         }
-        else if(nbr == 5){
+        else if(nbr % 5 == 0){
             return "Buzz";
         }
         return "" + nbr; // retouner result au lieu de null
